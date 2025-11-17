@@ -11,6 +11,7 @@
 
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
 
 <header class="site-header">
@@ -29,6 +30,7 @@
   </div>
 </header>
 
+
 <section class="shell-section">
   <div class="container">
     <h1 class="section-title">Selected Work</h1>
@@ -36,90 +38,106 @@
       A selection of analytics, governance, and decision-support projects. Each reflects analytical flexibility, structured problem solving, and a focus on responsible impact.
     </p>
 
-    <div style="
-      margin-top: 2.5rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-    ">
+    <!-- ========================================================= -->
+    <!-- ROW 1: CLICKABLE PROJECTS -->
+    <!-- ========================================================= -->
 
-      <!-- Hockey -->
-      <div style="background:white;border-radius:18px;padding:0;border:1px solid rgba(148,163,184,0.25);box-shadow:0 12px 30px rgba(15,23,42,0.08);overflow:hidden;">
-        <div style="height:180px;background:linear-gradient(135deg,#3f51b5,#6366f1);opacity:0.9;"></div>
-        <div style="padding:1.4rem;">
-          <h3 style="margin:0 0 0.6rem;font-family:'Space Grotesk';font-size:1.25rem;">
-            Hockey Analytics System – KPI Matrix & ML Modeling (In Progress)
-          </h3>
-          <p style="line-height:1.6;color:#4b5563;margin-bottom:1rem;">
+    <div class="project-grid">
+
+      <!-- Hockey Analytics -->
+      <a href="projects/hockey-analytics.html" class="project-card clickable">
+        <div class="project-header project-hockey"></div>
+        <div class="project-body">
+          <h3>Hockey Analytics System – KPI Matrix & ML Modeling (In Progress)</h3>
+          <p>
             In-progress analytics framework developed for a coach, combining structured KPI design with exploratory machine learning
             to support real-time decision-making and long-term player development. Designing a SQL-backed data pipeline, Power BI
             dashboards, and R/Python models with an emphasis on responsible evaluation and avoiding misleading metrics.
           </p>
         </div>
-      </div>
+      </a>
 
-      <!-- AI study -->
-      <div style="background:white;border-radius:18px;padding:0;border:1px solid rgba(148,163,184,0.25);box-shadow:0 12px 30px rgba(15,23,42,0.08);overflow:hidden;">
-        <div style="height:180px;background:linear-gradient(135deg,#1e293b,#3f51b5);opacity:0.9;"></div>
-        <div style="padding:1.4rem;">
-          <h3 style="margin:0 0 0.6rem;font-family:'Space Grotesk';font-size:1.25rem;">
-            AI & Student Engagement Study – Behavioural Analytics & Policy
-          </h3>
-          <p style="line-height:1.6;color:#4b5563;margin-bottom:1rem;">
-            Designed and analyzed a survey on how students use AI for academic work, focusing on engagement, decision-making, and
-            problem-solving behaviour. Interpreted usage trends, visualized patterns, and examined mismatches between time spent and
-            expected output quality. Findings informed governance recommendations for faculty, contributing to Saint Mary’s academic AI policy.
+      <!-- AI Exposure Research -->
+      <a href="projects/ai-exposure.html" class="project-card clickable">
+        <div class="project-header project-ai"></div>
+        <div class="project-body">
+          <h3>AI Exposure Research – Behavioural Analytics</h3>
+          <p>
+            Designed and analyzed a survey on how students use AI for academic work, focusing on behavioural patterns, engagement,
+            perceived difficulty, and decision-making. Identified usage types, risk factors, and indicators of over-reliance that inform
+            academic integrity risk modelling.
           </p>
         </div>
-      </div>
+      </a>
 
-      <!-- Lumin -->
-      <div style="background:white;border-radius:18px;padding:0;border:1px solid rgba(148,163,184,0.25);box-shadow:0 12px 30px rgba(15,23,42,0.08);overflow:hidden;">
-        <div style="height:180px;background:linear-gradient(135deg,#0f172a,#475569);opacity:0.9;"></div>
-        <div style="padding:1.4rem;">
-          <h3 style="margin:0 0 0.6rem;font-family:'Space Grotesk';font-size:1.25rem;">
-            RBC Hackathon – Lumin Mobility Prototype
-          </h3>
-          <p style="line-height:1.6;color:#4b5563;margin-bottom:1rem;">
+      <!-- AI Policy & Governance -->
+      <a href="projects/ai-policy.html" class="project-card clickable">
+        <div class="project-header project-policy"></div>
+        <div class="project-body">
+          <h3>AI Policy & Governance – Institutional Guidance</h3>
+          <p>
+            Policy-aligned recommendations for responsible AI adoption in academic environments, focusing on exposure modelling,
+            behavioural risk assessment, and governance frameworks for safe, transparent, and aligned AI use.
+          </p>
+        </div>
+      </a>
+
+    </div>
+
+
+
+    <!-- ========================================================= -->
+    <!-- ROW 2: NON-CLICKABLE (COMING SOON) -->
+    <!-- ========================================================= -->
+
+    <h2 class="section-title" style="margin-top: 3rem;">Additional Work</h2>
+    <p class="section-subtitle" style="max-width:36rem;">
+      Work in development, non-public, or part of multidisciplinary training experiences.
+    </p>
+
+    <div class="project-grid">
+
+      <!-- Lumin Mobility -->
+      <div class="project-card disabled">
+        <div class="project-header project-lumin"></div>
+        <div class="project-body">
+          <h3>RBC Hackathon – Lumin Mobility Prototype</h3>
+          <p>
             Led the design of “Lumin,” a human-centered mobility prototype built with Virtusa and Microsoft tools to improve
             transportation access and community connectivity in Halifax. Defined user flows, system logic, and feature relationships,
-            envisioning employer-sponsored transit, business-to-business support, and event coordination. Delivered a clickable demo
-            focused on connecting people, opportunities, and sustainable transport options.
+            producing a clickable conceptual demo.
           </p>
         </div>
       </div>
 
-      <!-- Public safety -->
-      <div style="background:white;border-radius:18px;padding:0;border:1px solid rgba(148,163,184,0.25);box-shadow:0 12px 30px rgba(15,23,42,0.08);overflow:hidden;">
-        <div style="height:180px;background:linear-gradient(135deg,#6366f1,#1e40af);opacity:0.9;"></div>
-        <div style="padding:1.4rem;">
-          <h3 style="margin:0 0 0.6rem;font-family:'Space Grotesk';font-size:1.25rem;">
-            Public Safety & Water Risk Education – National Drowning Prevention Week
-          </h3>
-          <p style="line-height:1.6;color:#4b5563;margin-bottom:1rem;">
-            Led public-facing initiatives for National Drowning Prevention Week, focused on educating the public about behaviours, factors,
-            and warning signs that create unsafe aquatic environments. Designed surveys, social media campaigns, and on-site outreach to
-            debunk common misconceptions and promote safer decisions. This work grounds my analytics interests in governance, risk communication,
-            and how people actually behave around safety.
+      <!-- Public Safety -->
+      <div class="project-card disabled">
+        <div class="project-header project-safety"></div>
+        <div class="project-body">
+          <h3>Public Safety & Water Risk Education – National Drowning Prevention Week</h3>
+          <p>
+            Led public-facing initiatives for National Drowning Prevention Week, focused on community education, surveying, and the
+            communication of behavioural risk factors that create unsafe aquatic environments. This work shaped my interest in governance,
+            responsible analytics, and behavioural decision-making.
           </p>
         </div>
       </div>
 
     </div>
+
   </div>
 </section>
+
 
 <footer class="site-footer">
   <div class="container footer-inner">
     <span>© <span id="year"></span> BlackPoint Analytics</span>
-    <span class="footer-note">Indigo hybrid portfolio · thoughtful analytics with purpose.</span>
+    <span class="footer-note">Corporate analytics · structured insight with intention.</span>
   </div>
 </footer>
 
 <script src="assets/js/main.js"></script>
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 
 </body>
 </html>

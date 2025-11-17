@@ -1,0 +1,58 @@
+<!-- future-projects.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Future Projects — Private</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <script>
+    let attempts = 4;
+    const correctPassword = "blackpoint";  // CHANGE THIS
+
+    function unlock() {
+      const input = document.getElementById("pw").value;
+      const msg = document.getElementById("msg");
+
+      if (input === correctPassword) {
+        document.getElementById("lock").style.display = "none";
+        document.getElementById("content").style.display = "block";
+      } else {
+        attempts--;
+        msg.textContent = "Incorrect. Attempts remaining: " + attempts;
+
+        if (attempts <= 0) {
+          alert("Locked out.");
+          window.location.href = "../index.html";
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+<div id="lock" class="lock-screen">
+  <h2>Private Access</h2>
+  <p>Enter password to view private projects.</p>
+  <input id="pw" type="password">
+  <button onclick="unlock()">Enter</button>
+  <p id="msg" style="color:red; margin-top:1rem;"></p>
+</div>
+
+<div id="content" style="display:none;">
+  <div class="container">
+    <h1>Future Projects</h1>
+    <p>Early-stage experiments, model development, and internal R&D.</p>
+
+    <ul>
+      <li>Custom LLM fine-tuning</li>
+      <li>Analytics governance framework expansion</li>
+      <li>Advanced KPI modelling</li>
+      <li>Behavioural & cognitive load tracker</li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
