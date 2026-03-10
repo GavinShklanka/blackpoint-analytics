@@ -1,169 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BlackPoint Analytics – Portfolio</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blackpoint Analytics — AI Systems Research & Architecture</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-
-<header class="site-header">
-  <div class="container header-inner">
-    <div class="logo">
-      <span class="logo-mark"></span>
-      <span class="logo-text">BlackPoint<span class="logo-text-faint"> Analytics</span></span>
+  <nav class="site-nav">
+    <div class="nav-container">
+      <div class="brand">Blackpoint Analytics</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#architecture-lab">Lab</a></li>
+        <li><a href="#systems">Systems</a></li>
+        <li><a href="#technical-notes">Notes</a></li>
+        <li><a href="#deployment">Deployment</a></li>
+        <li><a href="#context">Economy</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <nav class="nav">
-      <a href="index.html" class="nav-link nav-link-active">Home</a>
-      <a href="about.html" class="nav-link">About</a>
-      <a href="projects.html" class="nav-link">Projects</a>
-      <a href="contact.html" class="nav-link">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-bg"></div>
-
-    <div class="container hero-inner">
-      <div class="hero-copy">
-        <p class="eyebrow">Analytics · Problem Solving · Governance</p>
-
-        <h1 class="hero-title">
-          Turning <span class="hero-highlight">complex information</span> into clarity, insight, and responsible solutions.
-        </h1>
-
-        <p class="hero-subtitle">
-          I’m a Master of Business Data Analytics student with a foundation in psychology, public safety, and applied research.
-          My work focuses on analytical flexibility, structured problem solving, and using technology responsibly to improve how people think, decide, and act.
-        </p>
-
-        <div class="hero-actions">
-          <a href="projects.html" class="btn btn-primary">View My Work</a>
-          <a href="about.html" class="btn btn-ghost">Learn More</a>
-        </div>
-
-        <div class="hero-meta">
-          <span class="hero-tag">Halifax, Nova Scotia</span>
-          <span class="hero-dot"></span>
-          <span class="hero-tag">Analytics with intention</span>
-        </div>
-      </div>
-
-      <div class="hero-panel">
-        <div class="hero-card">
-          <p class="card-eyebrow">Focus Areas</p>
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h1 class="hero-headline">Blackpoint Analytics</h1>
+        <h2 class="hero-subheadline">
+          AI Systems Architecture | Decision Routing | Governance-Aware Agent Systems
+        </h2>
+        <div class="hero-content">
+          <p>Blackpoint Analytics explores architectures for deploying intelligent systems within complex
+            institutional environments.</p>
+          <p>The focus of this work is not simply predictive modeling. Instead, it examines how AI systems can
+            evaluate signals, route decisions across intervention pathways, and integrate human oversight
+            within operational infrastructure.</p>
+          <br>
+          <p>Modern institutions rarely suffer from lack of prediction.</p>
+          <p>They suffer from poorly structured <strong>decision pathways</strong>.</p>
+          <p>Signals arrive from multiple sources and must be evaluated across intervention paths with
+            different risks, costs, and operational constraints.</p>
+          <br>
+          <p>Blackpoint Analytics investigates systems that support:</p>
           <ul class="hero-list">
-            <li><span class="bullet"></span>Decision-support analytics & KPI design</li>
-            <li><span class="bullet"></span>Human-centered & behavioural insights</li>
-            <li><span class="bullet"></span>Responsible system & model thinking</li>
+            <li>decision routing architectures</li>
+            <li>agent orchestration frameworks</li>
+            <li>governance middleware</li>
+            <li>human-in-the-loop escalation</li>
+            <li>institutional observability systems</li>
           </ul>
+        </div>
+      </div>
+    </section>
 
-          <div class="hero-footnote">
-            Blending psychology, safety experience, and technical analytics to build thoughtful, structured solutions.
+    <section id="timeline" class="timeline-section">
+      <div class="container">
+        <h2 class="section-title">Intellectual Timeline</h2>
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Foundations in Human Systems</h3>
+
+              <div class="stage-meta">
+                <p class="institution"><strong>Acadia University</strong></p>
+                <p class="degree">Bachelor of Arts</p>
+                <p class="degree">Double Major: <strong>Psychology & Business Administration</strong>
+                </p>
+                <p class="school">Manning School of Business</p>
+              </div>
+
+              <div class="stage-details-grid">
+                <div>
+                  <h5>Focus areas:</h5>
+                  <ul>
+                    <li>human cognition</li>
+                    <li>behavioral decision making</li>
+                    <li>organizational systems</li>
+                    <li>economic incentives</li>
+                  </ul>
+                </div>
+                <div class="stage-narrative">
+                  <p>Interest in artificial intelligence began through studying the relationship
+                    between <strong>human reasoning and computational systems</strong>.</p>
+                  <p>Historical examples such as the <strong>Enigma codebreaking effort and early
+                      computing systems</strong> demonstrated how human intelligence and machine
+                    processes could intersect.</p>
+                  <p>Psychology provided a framework for understanding <strong>how humans make
+                      decisions</strong>, while business studies explored <strong>how
+                      organizations structure those decisions at scale</strong>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Quantitative Systems and Analytics</h3>
+
+              <div class="stage-meta">
+                <p class="institution"><strong>Saint Mary's University</strong></p>
+                <p class="school">Sobey School of Business</p>
+                <p class="degree">Master of Business Analytics (MBAN)</p>
+                <span class="edu-badge">Scholarship Recipient</span>
+              </div>
+
+              <div class="stage-details-grid">
+                <div>
+                  <h5>Graduate work introduced formal training in:</h5>
+                  <ul>
+                    <li>statistical learning</li>
+                    <li>machine learning</li>
+                    <li>optimization</li>
+                    <li>analytical infrastructure</li>
+                  </ul>
+                </div>
+                <div class="stage-narrative">
+                  <h5>Early work focused on:</h5>
+                  <ul class="inline-list">
+                    <li>predictive modeling</li>
+                    <li>machine learning pipelines</li>
+                    <li>quantitative analysis</li>
+                    <li>decision analytics</li>
+                  </ul>
+                  <p class="insight-text">These projects built technical capabilities but revealed a
+                    recurring pattern.</p>
+                  <p class="insight-text">Many real-world problems were <strong>not prediction
+                      problems</strong>.</p>
+                  <p class="insight-text highlight-text">They were <strong>decision routing
+                      problems</strong>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Realization: Institutional Decision Systems</h3>
+
+              <div class="realization-content">
+                <p>Operational environments rarely require a single prediction.</p>
+                <p>Instead they require choosing between <strong>multiple intervention
+                    pathways</strong>.</p>
+
+                <div class="examples-grid">
+                  <div>
+                    <h5>Example signals include:</h5>
+                    <ul>
+                      <li>medical symptoms</li>
+                      <li>financial risk indicators</li>
+                      <li>operational safety signals</li>
+                      <li>service requests</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h5>Each signal may trigger different responses:</h5>
+                    <ul>
+                      <li>automated response</li>
+                      <li>escalation to specialist</li>
+                      <li>scheduling intervention</li>
+                      <li>human approval</li>
+                      <li>further investigation</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <p class="costs-paragraph">Each pathway carries different <strong>costs</strong>,
+                  <strong>risks</strong>, and <strong>operational constraints</strong>.
+                </p>
+                <p class="conclusion-thesis">Prediction alone cannot manage this complexity.
+                  Institutions require <strong>systems that govern decision pathways</strong>.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>System Design: Governance-Aware AI</h3>
+
+              <div class="design-content">
+                <p>Current work focuses on designing architectures capable of orchestrating these decision pathways.
+                </p>
+
+                <h5>These systems integrate:</h5>
+                <ul>
+                  <li>agent orchestration</li>
+                  <li>governance middleware</li>
+                  <li>policy enforcement</li>
+                  <li>audit logging</li>
+                  <li>escalation routing</li>
+                  <li>human oversight layers</li>
+                </ul>
+
+                <p class="architectural-goal">The goal is to develop <strong>AI infrastructure capable
+                    of operating safely inside institutional environments</strong>.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="motivation" class="motivation-section">
+      <div class="container">
+        <h2 class="section-title">Motivation</h2>
+        <div class="motivation-content">
+          <p>Interest in artificial intelligence began long before formal training in analytics.</p>
+
+          <p>Growing up alongside the rapid development of machine learning systems raised fundamental questions about
+            how intelligent technologies would shape society.</p>
+
+          <p>Studying psychology provided insight into human cognition and decision making, while analytics
+            introduced the quantitative tools required to build computational systems.</p>
+
+          <p>As AI systems scale into institutional environments, the most important challenges are no longer
+            purely technical.</p>
+
+          <p>They involve <strong>governance, accountability, and responsible system design</strong>.</p>
+
+          <p class="highlight-paragraph">The goal of this work is to explore architectures that allow intelligent
+            systems to operate within structured decision environments while preserving human oversight and
+            societal safeguards.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="architecture-lab" class="architecture-lab">
+      <div class="container">
+        <h2 class="section-title">Architecture Lab</h2>
+
+        <div class="lab-intro">
+          <p>Blackpoint Analytics maintains an experimental architecture lab exploring
+            <strong>governance-aware AI systems</strong>.
+          </p>
+        </div>
+
+        <div class="diagram-placeholder" aria-label="Architecture Lab Diagram">
+          <span>[ Governance Middleware Architecture Visualization ]</span>
+        </div>
+
+        <div class="lab-grid-two">
+          <div class="lab-card">
+            <h3>Research Themes</h3>
+            <ul>
+              <li>decision routing architectures</li>
+              <li>agent orchestration systems</li>
+              <li>governance middleware</li>
+              <li>human-in-the-loop frameworks</li>
+              <li>institutional AI observability</li>
+            </ul>
+          </div>
+          <div class="lab-card focus-card">
+            <p class="thesis-statement">These experiments investigate how intelligent agents can operate within
+              <strong>real operational environments</strong> rather than isolated technical demos.
+            </p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SELECTED WORK -->
-  <section class="shell-section" style="padding-top: 3rem;">
+    <section id="systems" class="systems-section">
+      <div class="container">
+        <h2 class="section-title">Systems</h2>
+
+        <div class="systems-grid">
+          <div class="system-card">
+            <div class="system-header">
+              <h3>Agentic Appointment Engine</h3>
+              <a href="https://github.com/GavinShklanka/health_orchestrator" target="_blank"
+                class="repo-link">Repository</a>
+            </div>
+            <p class="system-description">Governance-first orchestration engine for healthcare decision
+              routing.</p>
+            <div class="architecture-details">
+              <h4>Architecture includes:</h4>
+              <ul>
+                <li>LangGraph execution engine</li>
+                <li>governance middleware</li>
+                <li>HITL approval workflows</li>
+                <li>escalation routing</li>
+                <li>audit logging</li>
+                <li>executive observability dashboard</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="system-card">
+            <div class="system-header">
+              <h3>RAG Architecture Evaluation Framework</h3>
+              <a href="https://github.com/GavinShklanka/MBAN-RAG" target="_blank" class="repo-link">Repository</a>
+            </div>
+            <p class="system-description">Research system comparing <strong>Vanilla RAG vs Agentic
+                RAG architectures</strong>.</p>
+            <div class="architecture-details">
+              <h4>Focus areas:</h4>
+              <ul>
+                <li>retrieval coverage</li>
+                <li>token efficiency</li>
+                <li>latency</li>
+                <li>explainable reasoning</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="system-card">
+            <div class="system-header">
+              <h3>Travel Agent Orchestration System</h3>
+              <a href="https://github.com/GavinShklanka/travel_agent" target="_blank" class="repo-link">Repository</a>
+            </div>
+            <p class="system-description">Multi-agent planning architecture integrating:</p>
+            <div class="architecture-details">
+              <ul>
+                <li>external APIs</li>
+                <li>routing logic</li>
+                <li>itinerary synthesis</li>
+                <li>planning engines</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="system-card">
+            <div class="system-header">
+              <h3>Klara Governance Architecture</h3>
+              <a href="https://github.com/GavinShklanka/klara-agenticgovernance" target="_blank"
+                class="repo-link">Repository</a>
+            </div>
+            <p class="system-description">Experimental system exploring governance-aware agent
+              orchestration.</p>
+            <div class="architecture-details">
+              <h4>Focus areas:</h4>
+              <ul>
+                <li>policy enforcement</li>
+                <li>modular routing frameworks</li>
+                <li>agent coordination</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="technical-notes" class="technical-notes">
+      <div class="container">
+        <h2 class="section-title">Research & Technical Notes</h2>
+
+        <p class="notes-intro">Blackpoint Analytics publishes technical notes exploring governance-aware AI
+          systems and institutional deployment challenges.</p>
+
+        <div class="notes-list">
+          <p class="upcoming-label">Upcoming topics include:</p>
+          <div class="note-card">
+            <h3>Prediction Is Not the Problem: Decision Routing in Institutional AI</h3>
+          </div>
+
+          <div class="note-card">
+            <h3>Why Agent Systems Need Governance Layers</h3>
+          </div>
+
+          <div class="note-card">
+            <h3>Human Oversight Is Infrastructure</h3>
+          </div>
+
+          <div class="note-card">
+            <h3>Institutional AI vs Consumer AI</h3>
+          </div>
+
+          <div class="note-card">
+            <h3>Architectural Patterns for Governance-Aware Agent Systems</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="deployment" class="deployment-section">
+      <div class="container">
+        <h2 class="section-title">Institutional Deployment Challenge</h2>
+        <div class="deployment-content">
+          <p>AI systems must be deployed inside <strong>existing institutional infrastructure</strong>.</p>
+
+          <p>Healthcare systems, financial institutions, and public organizations operate on complex
+            frameworks built long before modern AI capabilities emerged.</p>
+
+          <p>These environments often produce the inefficiencies AI is expected to solve.</p>
+
+          <p>As a result, intelligent systems cannot simply replace legacy infrastructure.</p>
+
+          <p class="highlight-text">They must be designed to <strong>operate within it</strong>.</p>
+
+          <div class="deployment-requirements">
+            <h4>This requires systems capable of:</h4>
+            <ul>
+              <li>interpreting signals across fragmented environments</li>
+              <li>routing decisions across intervention pathways</li>
+              <li>integrating human oversight</li>
+              <li>maintaining compatibility with existing operational processes</li>
+            </ul>
+          </div>
+
+          <p>The challenge is not only technological.</p>
+          <p>It is <strong>organizational</strong>.</p>
+          <p>If systems do not integrate into the environments where decisions already occur, they will not be
+            used.</p>
+
+          <p class="conclusion-thesis">Blackpoint Analytics explores architectures capable of transforming
+            signals emerging across complex ecosystems into <strong>governed decision pathways</strong>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="context" class="startup-exposure">
+      <div class="container">
+        <h2 class="section-title">AI Economy Context</h2>
+        <div class="exposure-content">
+          <p>Observing emerging AI startups such as <a href="https://www.bestwe.com/" target="_blank"
+              class="inline-link">BestWe</a> provides insight into how organizations are beginning to
+            integrate AI systems into operational environments.</p>
+
+          <p>These developments highlight the importance of designing AI architectures capable of supporting
+            responsible deployment at scale.</p>
+
+          <p class="conclusion">Blackpoint Analytics explores how governance-aware infrastructure can support
+            this transition.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-content">
+          <a href="mailto:contact@blackpointanalytics.com" class="contact-btn">Get in touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
     <div class="container">
-      <h2 class="section-title">Selected Work</h2>
-      <p class="section-subtitle" style="max-width: 36rem;">
-        A mix of analytics, research, governance-oriented work, and early-stage system design.
-        Each project reflects my interest in understanding behaviour, structuring information, and solving problems with clarity.
-      </p>
-
-      <div style="
-        margin-top: 2.5rem;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-      ">
-
-        <!-- Hockey Analytics -->
-        <div style="background:white;border-radius:18px;border:1px solid rgba(148,163,184,0.25);box-shadow:0 12px 30px rgba(15,23,42,0.08);overflow:hidden;">
-          <div style="height:160px;background:linear-gradient(135deg,#3f51b5,#6366f1);opacity:0.9;"></div>
-          <div style="padding:1.4rem;">
-            <h3 style="font-family:'Space Grotesk';font-size:1.2rem;margin-bottom:0.6rem;">
-              Hockey Analytics System (In Progress)
-            </h3>
-            <p style="line-height:1.6;color:#4b5563;">
-              Designing a KPI matrix, SQL pipeline, and ML experiments for coaching insight and responsible performance evaluation.
-            </p>
-            <a href="projects.html" class="btn btn-ghost" style="margin-top:0.8rem;">Explore</a>
-          </div>
-        </div>
-
-        <!-- AI & Student Engagement -->
-        <div style="background:white;border-radius:18px;border:1px solid rgba(148,163,184,0.25);box-shadow:0 12px 30px rgba(15,23,42,0.08);overflow:hidden;">
-          <div style="height:160px;background:linear-gradient(135deg,#1e293b,#3f51b5);opacity:0.9;"></div>
-          <div style="padding:1.4rem;">
-            <h3 style="font-family:'Space Grotesk';font-size:1.2rem;margin-bottom:0.6rem;">
-              AI & Student Engagement Study
-            </h3>
-            <p style="line-height:1.6;color:#4b5563;">
-              Behavioural research on student AI use that informed governance recommendations now reflected in SMU policy.
-            </p>
-            <a href="projects.html" class="btn btn-ghost" style="margin-top:0.8rem;">Explore</a>
-          </div>
-        </div>
-
-        <!-- Lumin -->
-        <div style="background:white;border-radius:18px;border:1px solid rgba(148,163,184,0.25);box-shadow:0 12px 30px rgba(15,23,42,0.08);overflow:hidden;">
-          <div style="height:160px;background:linear-gradient(135deg,#0f172a,#475569);opacity:0.9;"></div>
-          <div style="padding:1.4rem;">
-            <h3 style="font-family:'Space Grotesk';font-size:1.2rem;margin-bottom:0.6rem;">
-              Lumin Mobility Prototype – RBC Hackathon
-            </h3>
-            <p style="line-height:1.6;color:#4b5563;">
-              Led the design of a human-centered transportation prototype to improve access, mobility, and community connection.
-            </p>
-            <a href="projects.html" class="btn btn-ghost" style="margin-top:0.8rem;">Explore</a>
-          </div>
-        </div>
-
-        <!-- Public Safety -->
-        <div style="background:white;border-radius:18px;border:1px solid rgba(148,163,184,0.25);box-shadow:0 12px 30px rgba(15,23,42,0.08);overflow:hidden;">
-          <div style="height:160px;background:linear-gradient(135deg,#6366f1,#1e40af);opacity:0.9;"></div>
-          <div style="padding:1.4rem;">
-            <h3 style="font-family:'Space Grotesk';font-size:1.2rem;margin-bottom:0.6rem;">
-              Water Safety & Public Risk Education
-            </h3>
-            <p style="line-height:1.6;color:#4b5563;">
-              Led onsite education, behavioural surveys, and risk communication initiatives during National Drowning Prevention Week.
-            </p>
-            <a href="projects.html" class="btn btn-ghost" style="margin-top:0.8rem;">Explore</a>
-          </div>
-        </div>
-
+      <div class="footer-content">
+        <p><strong>Blackpoint Analytics</strong></p>
+        <p><strong>AI Systems Research & Architecture</strong></p>
+        <p>Exploring governance-aware decision infrastructure for institutions.</p>
       </div>
     </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <span>© <span id="year"></span> BlackPoint Analytics</span>
-    <span class="footer-note">Indigo hybrid portfolio · thoughtful analytics with purpose.</span>
-  </div>
-</footer>
-
-<script src="assets/js/main.js"></script>
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-
+  </footer>
 </body>
+
 </html>
