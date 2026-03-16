@@ -1,137 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact – BlackPoint Analytics</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Blackpoint Analytics</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* ── Contact Page ─────────────────────────────── */
+    .contact-hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(ellipse at 30% 20%, rgba(56, 189, 248, 0.04) 0%, transparent 60%),
+                  radial-gradient(ellipse at 70% 80%, rgba(30, 64, 175, 0.06) 0%, transparent 50%);
+    }
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+    .contact-wrapper {
+      width: 100%;
+      max-width: 580px;
+      margin: 0 auto;
+    }
 
-  <link rel="stylesheet" href="assets/css/style.css" />
+    .contact-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--text-accent);
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+
+    .contact-headline {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+      line-height: 1.15;
+    }
+
+    .contact-sub {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin-bottom: 2.5rem;
+      line-height: 1.6;
+      max-width: 440px;
+    }
+
+    /* ── Card ──────────────────────────────────────── */
+    .contact-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 2.5rem;
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--text-accent), #1e40af, transparent);
+    }
+
+    .card-name {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 0.2rem;
+      letter-spacing: -0.02em;
+    }
+
+    .card-title {
+      font-size: 0.85rem;
+      color: var(--text-accent);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+
+    .card-divider {
+      height: 1px;
+      background: var(--border-color);
+      margin: 0 0 1.5rem;
+    }
+
+    /* ── Contact Items ────────────────────────────── */
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .contact-icon {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: rgba(56, 189, 248, 0.08);
+      border: 1px solid rgba(56, 189, 248, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }
+
+    .contact-icon svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .contact-detail-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      font-weight: 600;
+      margin-bottom: 0.15rem;
+      display: block;
+    }
+
+    .contact-detail-value {
+      font-size: 0.95rem;
+      color: var(--text-primary);
+    }
+
+    .contact-detail-value a {
+      color: var(--text-primary);
+      transition: color 0.2s ease;
+      text-decoration: none;
+    }
+
+    .contact-detail-value a:hover {
+      color: var(--text-accent);
+    }
+
+    /* ── Resume Button ────────────────────────────── */
+    .resume-divider {
+      height: 1px;
+      background: var(--border-color);
+      margin: 1.8rem 0;
+    }
+
+    .resume-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      width: 100%;
+      padding: 0.85rem 1.5rem;
+      background: rgba(56, 189, 248, 0.08);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      border-radius: 8px;
+      color: var(--text-accent);
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .resume-btn:hover {
+      background: rgba(56, 189, 248, 0.15);
+      border-color: var(--text-accent);
+      color: #fff;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 20px rgba(56, 189, 248, 0.15);
+    }
+
+    .resume-btn svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    /* ── Tagline ──────────────────────────────────── */
+    .contact-tagline {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: rgba(148, 163, 184, 0.4);
+      font-weight: 500;
+    }
+
+    @media (max-width: 640px) {
+      .contact-card {
+        padding: 1.8rem;
+      }
+      .contact-headline {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
-
-<header class="site-header">
-  <div class="container header-inner">
-    <div class="logo">
-      <span class="logo-mark"></span>
-      <span class="logo-text">BlackPoint<span class="logo-text-faint"> Analytics</span></span>
+  <nav class="site-nav">
+    <div class="nav-container">
+      <div class="brand"><a href="index.html">Blackpoint Analytics</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="lab.html">Architecture Lab</a></li>
+        <li><a href="systems.html">Systems</a></li>
+        <li><a href="notes.html">Research Notes</a></li>
+        <li><a href="deployment.html">Deployment</a></li>
+        <li><a href="economy.html">AI Economy</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <nav class="nav">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="about.html" class="nav-link">About</a>
-      <a href="projects.html" class="nav-link">Projects</a>
-      <a href="contact.html" class="nav-link nav-link-active">Contact</a>
-    </nav>
-  </div>
-</header>
+  <main>
+    <div class="contact-hero">
+      <div class="container">
+        <div class="contact-wrapper">
 
-<section class="shell-section" style="padding-top: 4rem;">
-  <div class="container">
+          <p class="contact-label">Contact</p>
+          <h1 class="contact-headline">Get In Touch</h1>
+          <p class="contact-sub">
+            Open to connecting with teams and opportunities focused on
+            analytics, AI governance, and strategic decision systems.
+          </p>
 
-    <h1 class="section-title">Get In Touch</h1>
-    <p class="section-subtitle" style="max-width: 32rem;">
-      Whether you're looking for analytics support, strategic insight, or a conversation about responsible data and AI use, 
-      I’m open to connecting with teams and opportunities that care about thoughtful, human-centered solutions.
-    </p>
+          <!-- ── Contact Card ───────────────────────── -->
+          <div class="contact-card" id="contact-card">
 
-    <div style="
-      margin-top: 2.5rem;
-      background: white;
-      border-radius: 20px;
-      padding: 2rem;
-      max-width: 460px;
-      border: 1px solid rgba(148,163,184,0.25);
-      box-shadow: 0 12px 30px rgba(15,23,42,0.08);
-    ">
-      <h2 style="font-family: 'Space Grotesk'; font-size: 1.4rem; color:#1e293b; margin-bottom: 1.4rem;">
-        Contact Details
-      </h2>
+            <img src="assets/images/profile.jpg" alt="Gavin Shklanka" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem; border: 2px solid var(--border-color);">
+            <p class="card-name">Gavin Shklanka</p>
+            <p class="card-title">Analytics · AI Systems · Strategy</p>
+            <div class="card-divider"></div>
 
-      <!-- EMAIL -->
-      <p style="margin: 0 0 1.2rem; color:#1e293b; display:flex; align-items:center; gap:0.45rem;">
-        <span aria-hidden="true">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-               xmlns="http://www.w3.org/2000/svg">
-            <rect x="3" y="5" width="18" height="14" rx="2.2" ry="2.2"
-                  stroke="#1e40af" stroke-width="1.6" />
-            <polyline points="4,7.5 12,13 20,7.5"
-                      stroke="#1e40af" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </span>
-        <span>
-          <strong>Email:</strong><br>
-          <a href="mailto:gavinshk07@gmail.com" 
-             style="color:#1e40af; text-decoration:none;">
-            gavinshk07@gmail.com
-          </a>
-        </span>
-      </p>
+            <!-- Email -->
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="3" y="5" width="18" height="14" rx="2" stroke="#38bdf8" stroke-width="1.5"/>
+                  <polyline points="4,7 12,13 20,7" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-detail-label">Email</span>
+                <span class="contact-detail-value">
+                  <a href="mailto:gavinshk07@gmail.com">gavinshk07@gmail.com</a>
+                </span>
+              </div>
+            </div>
 
-      <!-- LINKEDIN -->
-      <p style="margin: 0 0 1.2rem; color:#1e293b; display:flex; align-items:center; gap:0.45rem;">
-        <span aria-hidden="true">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-               xmlns="http://www.w3.org/2000/svg">
-            <rect x="3" y="3" width="18" height="18" rx="2.5"
-                  stroke="#1e40af" stroke-width="1.6"/>
-            <circle cx="8" cy="10" r="1.3" fill="#1e40af"/>
-            <path d="M7.2 16.5V12.5" stroke="#1e40af" stroke-width="1.6" stroke-linecap="round"/>
-            <path d="M11.5 16.5V12.7C11.5 11.76 12.26 11 13.2 11C14.14 11 14.9 11.76 14.9 12.7V16.5" 
-                  stroke="#1e40af" stroke-width="1.6" stroke-linecap="round"/>
-          </svg>
-        </span>
-        <span>
-          <strong>LinkedIn:</strong><br>
-          <a href="https://www.linkedin.com/in/gavin-shklanka07/" 
-             target="_blank" 
-             style="color:#1e40af; text-decoration:none;">
-            linkedin.com/in/gavin-shklanka07
-          </a>
-        </span>
-      </p>
+            <!-- LinkedIn -->
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="3" y="3" width="18" height="18" rx="2.5" stroke="#38bdf8" stroke-width="1.5"/>
+                  <circle cx="8.5" cy="8.5" r="1.2" fill="#38bdf8"/>
+                  <line x1="8.5" y1="11" x2="8.5" y2="16.5" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round"/>
+                  <path d="M12.5 16.5V13C12.5 11.9 13.4 11 14.5 11C15.6 11 16.5 11.9 16.5 13V16.5" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-detail-label">LinkedIn</span>
+                <span class="contact-detail-value">
+                  <a href="https://www.linkedin.com/in/gavinshklanka07/" target="_blank" rel="noopener">
+                    linkedin.com/in/gavinshklanka07
+                  </a>
+                </span>
+              </div>
+            </div>
 
-      <!-- GITHUB -->
-      <p style="margin: 0 0 1.2rem; color:#1e293b; display:flex; align-items:center; gap:0.45rem;">
-        <span aria-hidden="true">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-               xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 3C7.58 3 4 6.58 4 11C4 14.87 6.58 18.1 10.09 19.2C10.25 19.23 10.3 19.14 10.3 19.06C10.3 18.99 10.29 18.8 10.29 18.59C8 19.09 7.48 17.72 7.48 17.72C7.34 17.33 6.96 16.62 6.53 16.44C5.98 16.16 6.38 16.14 6.47 16.14C7.02 16.19 7.35 16.72 7.49 17.02C8.1 18.22 9.16 17.89 9.62 17.71C9.69 17.19 9.9 16.84 10.13 16.64C8.39 16.44 6.56 15.78 6.56 12.73C6.56 11.86 6.87 11.16 7.38 10.63C7.3 10.43 7.03 9.64 7.46 8.53C7.46 8.53 8.11 8.32 10.29 9.55C10.9 9.38 11.54 9.29 12.18 9.29C12.82 9.29 13.46 9.38 14.07 9.55C16.25 8.31 16.9 8.53 16.9 8.53C17.33 9.64 17.06 10.43 16.98 10.63C17.49 11.16 17.8 11.85 17.8 12.73C17.8 15.79 15.96 16.43 14.21 16.63C14.49 16.87 14.73 17.33 14.73 18.05C14.73 19.05 14.72 18.93 14.72 19.06C14.72 19.14 14.77 19.24 14.94 19.2C18.45 18.1 21.02 14.87 21.02 11C21.02 6.58 17.42 3 13 3H12Z"
-                  stroke="#1e40af" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
-        <span>
-          <strong>GitHub:</strong><br>
-          <a href="https://github.com/GavinShklanka" 
-             target="_blank" 
-             style="color:#1e40af; text-decoration:none;">
-            github.com/GavinShklanka
-          </a>
-        </span>
-      </p>
+            <!-- GitHub -->
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2C6.48 2 2 6.48 2 12C2 16.42 4.87 20.17 8.84 21.5C9.34 21.58 9.5 21.27 9.5 21V19.31C6.73 19.91 6.14 17.97 6.14 17.97C5.68 16.81 5.03 16.5 5.03 16.5C4.12 15.88 5.1 15.9 5.1 15.9C6.1 15.97 6.63 16.93 6.63 16.93C7.5 18.45 8.97 18 9.54 17.76C9.63 17.11 9.89 16.67 10.17 16.42C7.95 16.17 5.62 15.31 5.62 11.5C5.62 10.39 6.06 9.5 6.65 8.79C6.55 8.54 6.2 7.5 6.75 6.15C6.75 6.15 7.59 5.88 9.5 7.17C10.29 6.95 11.15 6.84 12 6.84C12.85 6.84 13.71 6.95 14.5 7.17C16.41 5.88 17.25 6.15 17.25 6.15C17.8 7.5 17.45 8.54 17.35 8.79C17.94 9.5 18.38 10.39 18.38 11.5C18.38 15.32 16.04 16.16 13.81 16.41C14.17 16.72 14.5 17.33 14.5 18.26V21C14.5 21.27 14.66 21.59 15.17 21.5C19.14 20.16 22 16.42 22 12C22 6.48 17.52 2 12 2Z"
+                    fill="#38bdf8"/>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-detail-label">GitHub</span>
+                <span class="contact-detail-value">
+                  <a href="https://github.com/GavinShklanka" target="_blank" rel="noopener">
+                    github.com/GavinShklanka
+                  </a>
+                </span>
+              </div>
+            </div>
 
-      <a href="mailto:gavinshk07@gmail.com" class="btn btn-primary" style="margin-top: 1rem;">
-        Send Email
-      </a>
+            <!-- GitHub (Models) -->
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2C6.48 2 2 6.48 2 12C2 16.42 4.87 20.17 8.84 21.5C9.34 21.58 9.5 21.27 9.5 21V19.31C6.73 19.91 6.14 17.97 6.14 17.97C5.68 16.81 5.03 16.5 5.03 16.5C4.12 15.88 5.1 15.9 5.1 15.9C6.1 15.97 6.63 16.93 6.63 16.93C7.5 18.45 8.97 18 9.54 17.76C9.63 17.11 9.89 16.67 10.17 16.42C7.95 16.17 5.62 15.31 5.62 11.5C5.62 10.39 6.06 9.5 6.65 8.79C6.55 8.54 6.2 7.5 6.75 6.15C6.75 6.15 7.59 5.88 9.5 7.17C10.29 6.95 11.15 6.84 12 6.84C12.85 6.84 13.71 6.95 14.5 7.17C16.41 5.88 17.25 6.15 17.25 6.15C17.8 7.5 17.45 8.54 17.35 8.79C17.94 9.5 18.38 10.39 18.38 11.5C18.38 15.32 16.04 16.16 13.81 16.41C14.17 16.72 14.5 17.33 14.5 18.26V21C14.5 21.27 14.66 21.59 15.17 21.5C19.14 20.16 22 16.42 22 12C22 6.48 17.52 2 12 2Z" fill="#38bdf8"/>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-detail-label">Blackpoint Labs - Models</span>
+                <span class="contact-detail-value">
+                  <a href="https://github.com/Blackpoint-Labs/models" target="_blank" rel="noopener">
+                    github.com/Blackpoint-Labs/models
+                  </a>
+                </span>
+              </div>
+            </div>
+
+            <!-- Resume Download -->
+            <div class="resume-divider"></div>
+            <a href="assets/Resume_QTS.pdf" download class="resume-btn" id="resume-download">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 3V16M12 16L7 11M12 16L17 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5 20H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              Download Resume
+            </a>
+
+          </div>
+
+          <p class="contact-tagline">Chasing signals · Not noise</p>
+
+        </div>
+      </div>
     </div>
+  </main>
 
-  </div>
-</section>
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <span>© <span id="year"></span> BlackPoint Analytics</span>
-    <span class="footer-note">Indigo hybrid portfolio · thoughtful analytics with purpose.</span>
-  </div>
-</footer>
-
-<script src="assets/js/main.js"></script>
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p><strong>Blackpoint Analytics</strong></p>
+        <p><strong>AI Systems Research & Architecture</strong></p>
+        <p>Exploring governance-aware decision infrastructure for institutions.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/interaction.js"></script>
 </body>
+
 </html>
