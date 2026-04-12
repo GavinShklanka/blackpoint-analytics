@@ -1,0 +1,250 @@
+[
+  {
+    "slug": "vcm-road-safety-intelligence",
+    "title": "Nova Scotia Road Safety Intelligence",
+    "subtitle": "Collision severity analytics for corridor prioritization and public-safety decision support",
+    "status": "completed",
+    "featured": true,
+    "category": "Analytics",
+    "tags": ["Analytics", "Decision Support", "Data Visualization"],
+    "sort_order": 1,
+    "short_summary": "An interactive analytics system that structures collision data into interpretable severity patterns, corridor-level risk profiles, and operational insights for public-safety resource planning.",
+    "executive_summary": "This project transforms raw Nova Scotia collision data into a structured analytical product that supports public-safety planning. It combines vehicle collision modeling with interactive dashboards to surface severity patterns, identify high-risk corridors, and support evidence-based resource allocation decisions.",
+    "business_problem": "Road safety agencies face a fundamental analytical challenge: collision data is abundant but understructured. Without clear severity classification, corridor-level risk profiles, and interpretable visualizations, decision-makers struggle to prioritize interventions. The gap is not missing data — it is missing analytical workflow between raw records and actionable intelligence.",
+    "solution_overview": "The system ingests collision records, applies bootstrap-based severity modeling to classify risk levels, and presents results through an interactive dashboard with corridor-level drill-downs, temporal pattern views, and severity distribution analysis. The workflow moves from raw data through statistical modeling to stakeholder-facing analytics.",
+    "contribution": "Designed the analytical workflow end-to-end: data ingestion pipeline, bootstrap severity classification model, interactive dashboard architecture, corridor prioritization logic, and the interpretive framing that makes statistical outputs usable for operational planning. Built the visualization layer to communicate risk patterns clearly to non-technical stakeholders.",
+    "architecture": {
+      "data_layer": "CSV/structured collision records → cleaned and normalized pipeline",
+      "modeling": "Bootstrap resampling for severity classification, confidence intervals, corridor scoring",
+      "frontend": "Interactive JavaScript dashboard with filtering, drill-down, and map views",
+      "outputs": "Severity heatmaps, corridor risk profiles, temporal trend analysis, priority rankings"
+    },
+    "workflow_steps": [
+      "Ingest and clean raw collision records",
+      "Apply bootstrap severity classification model",
+      "Generate corridor-level risk scores and confidence intervals",
+      "Build interactive dashboard with filtering and drill-down",
+      "Present stakeholder-facing severity patterns and recommendations"
+    ],
+    "outcomes": [
+      "Structured severity classification across thousands of collision records",
+      "Corridor-level risk profiles with statistical confidence bounds",
+      "Interactive dashboard supporting temporal and geographic drill-downs",
+      "Decision-support framework for resource prioritization"
+    ],
+    "reflection": "The next phase would integrate real-time data feeds, expand the severity model to include environmental and behavioral covariates, and develop a predictive layer for emerging risk corridors. The governance framework — ensuring model outputs are interpretable and claim-bounded — would remain central to any expansion.",
+    "screenshots": [],
+    "hero_image": "assets/images/projects/vcm-hero.webp",
+    "github_url": "https://github.com/GavinShklanka/vcm_model",
+    "live_url": "",
+    "linkedin_skills": ["Business Analysis", "Data Visualization", "Decision Support Systems", "Workflow Design", "Analytics"],
+    "linkedin_description": "Designed and developed an interactive analytics project focused on road safety intelligence in Nova Scotia. The project combines structured analysis, visualization, and decision-support thinking to help surface collision patterns, severity signals, and operational insights relevant to resource planning and public-safety strategy. My work focused on translating a real-world analytical problem into a usable product-style interface with clear workflow logic, interactive views, and business-facing communication of results."
+  },
+  {
+    "slug": "vela-space-analytics",
+    "title": "Vela Space Analytics",
+    "subtitle": "Forecasting and interface design for space-domain awareness and operational analytics",
+    "status": "completed",
+    "featured": true,
+    "category": "Analytics",
+    "tags": ["Analytics", "Forecasting", "Systems Design"],
+    "sort_order": 2,
+    "short_summary": "A full-stack space analytics platform that organizes complex orbital and operational data into structured forecasting pipelines, interactive dashboards, and interpretable analytical workflows.",
+    "executive_summary": "Vela Space Analytics is a systems-oriented analytics platform built to demonstrate how complex operational data — in this case, space-domain information — can be structured into interpretable forecasting workflows, interactive dashboards, and usable analytical products. The project reflects applied systems thinking across data ingestion, modeling, and interface design.",
+    "business_problem": "Space-domain awareness environments produce high volumes of complex operational data. Without structured analytical workflows, this data remains inaccessible to decision-makers who need forecasting, status monitoring, and scenario analysis rather than raw telemetry feeds. The challenge is turning data-heavy environments into clearer analytical interfaces.",
+    "solution_overview": "The platform implements a multi-layer architecture: a data ingestion pipeline that processes and normalizes space-domain data, a forecasting and analytics engine that generates predictive insights, and an interactive frontend that presents results through structured dashboard views with filtering, temporal analysis, and entity-level drill-downs.",
+    "contribution": "Designed the full system architecture from data ingestion through analytical outputs. Built the forecasting pipeline, structured the dashboard interaction model, and framed the project as a portfolio-ready case study in translating complex technical domains into usable analytical products.",
+    "architecture": {
+      "data_layer": "API-driven data ingestion with normalization and enrichment pipeline",
+      "modeling": "Forecasting engine with temporal analysis and anomaly detection",
+      "frontend": "React-based dashboard with interactive views, filtering, and entity drill-downs",
+      "outputs": "Orbital analytics, status monitoring, forecasting views, scenario exploration"
+    },
+    "workflow_steps": [
+      "Ingest operational data through structured API pipeline",
+      "Normalize and enrich data for analytical consistency",
+      "Apply forecasting models and temporal analysis",
+      "Render interactive dashboard with multiple analytical views",
+      "Support drill-down from overview to entity-level detail"
+    ],
+    "outcomes": [
+      "Full-stack analytics platform with data-to-dashboard pipeline",
+      "Interactive forecasting views with temporal and entity-level analysis",
+      "Demonstrated translation of complex operational data into usable interface",
+      "Portfolio-ready case study in systems-oriented analytics design"
+    ],
+    "reflection": "The next phase would expand the forecasting models, add real-time data streaming, and explore collaborative features for multi-user analytical workflows. The core lesson — that interface design is as important as model quality — would guide any future development.",
+    "screenshots": [],
+    "hero_image": "assets/images/projects/vela-hero.webp",
+    "github_url": "https://github.com/GavinShklanka/Solar-Orrery",
+    "live_url": "https://gavinshklanka.github.io/Solar-Orrery/",
+    "linkedin_skills": ["Business Analysis", "Data Analytics", "Product Thinking", "Workflow Automation", "Systems Design"],
+    "linkedin_description": "Built a space analytics platform concept designed to organize and present complex operational information through a structured, interactive interface. The project reflects my interest in decision support, systems thinking, and turning data-heavy environments into clearer analytical workflows. My role included framing the use case, shaping the user experience, structuring the project logic, and translating technical components into a more accessible product and portfolio artifact."
+  },
+  {
+    "slug": "grip-risk-analytics",
+    "title": "GRIP: Geopolitical Resilience Intelligence Platform",
+    "subtitle": "Scenario-led resilience analytics for energy infrastructure and geopolitical risk assessment",
+    "status": "completed",
+    "featured": true,
+    "category": "Decision Support",
+    "tags": ["Decision Support", "Risk Analysis", "Governance"],
+    "sort_order": 3,
+    "short_summary": "A structured intelligence platform that applies scenario-based analysis, vulnerability scoring, and resilience metrics to assess geopolitical risk exposure across energy infrastructure systems.",
+    "executive_summary": "GRIP structures geopolitical risk analysis into a disciplined analytical workflow: data ingestion, vulnerability scoring, scenario modeling, and interactive dashboard exploration. Rather than producing singular predictions, the system supports scenario-based reasoning where decision-makers can explore how different geopolitical conditions affect infrastructure resilience.",
+    "business_problem": "Geopolitical risk assessment for energy infrastructure is complex, uncertain, and high-stakes. Traditional approaches either oversimplify into single risk scores or overwhelm decision-makers with unstructured intelligence. The challenge is creating a structured analytical framework that communicates uncertainty honestly while still supporting actionable decision-making.",
+    "solution_overview": "The platform implements a multi-view intelligence dashboard built on structured risk assessment logic. It combines entity-level vulnerability scoring, scenario-based resilience analysis, temporal monitoring, and geographic risk mapping. The workflow supports both high-level monitoring and detailed scenario exploration.",
+    "contribution": "Designed the analytical framework, built the full-stack platform (FastAPI backend, React frontend, DuckDB data layer), structured the vulnerability scoring model, and framed the entire project around disciplined claim boundaries — ensuring the system communicates uncertainty rather than hiding it.",
+    "architecture": {
+      "data_layer": "DuckDB-backed data store with structured intelligence ingestion",
+      "modeling": "Vulnerability scoring engine, scenario modeling, resilience metrics",
+      "frontend": "React dashboard with six analytical views and interactive exploration",
+      "outputs": "Risk heatmaps, scenario comparisons, vulnerability profiles, temporal trend analysis"
+    },
+    "workflow_steps": [
+      "Ingest structured intelligence data into normalized data store",
+      "Apply vulnerability scoring and resilience metrics to entities",
+      "Generate scenario-based risk assessments with uncertainty bounds",
+      "Present results through six interactive dashboard views",
+      "Support drill-down from geographic overview to entity-level analysis"
+    ],
+    "outcomes": [
+      "Six-view intelligence dashboard covering geographic, temporal, and scenario analysis",
+      "Vulnerability scoring framework with honest uncertainty communication",
+      "Scenario-based resilience analysis supporting structured decision-making",
+      "Full-stack implementation deployed to GitHub Pages as static portfolio artifact"
+    ],
+    "reflection": "The next phase would integrate real-time intelligence feeds, expand the scenario engine to support user-defined parameters, and add collaborative annotation features. The governance principle — that risk analytics must communicate uncertainty, not hide it — would remain the core design constraint.",
+    "screenshots": [],
+    "hero_image": "assets/images/projects/grip-hero.webp",
+    "github_url": "https://github.com/GavinShklanka/grip",
+    "live_url": "https://gavinshklanka.github.io/grip/",
+    "linkedin_skills": ["Business Analysis", "Risk Analysis", "Decision Support Systems", "Data Visualization", "Systems Design"],
+    "linkedin_description": "Built a geopolitical resilience intelligence platform designed to structure risk analysis into a disciplined analytical workflow. The system combines vulnerability scoring, scenario-based resilience analysis, and interactive dashboard exploration to support decision-making under uncertainty. My work focused on designing the analytical framework, building the full-stack platform, and ensuring the system communicates uncertainty honestly rather than hiding it behind single risk scores."
+  },
+  {
+    "slug": "equity-research",
+    "title": "Equity Research Platform",
+    "subtitle": "Structured research delivery through a guided dashboard workflow and analytical communication",
+    "status": "completed",
+    "featured": true,
+    "category": "Research",
+    "tags": ["Research", "Analytics", "Dashboards"],
+    "sort_order": 4,
+    "short_summary": "A structured equity research platform that delivers analytical findings through a guided step-by-step dashboard workflow, making complex financial analysis interpretable and stakeholder-ready.",
+    "executive_summary": "The Equity Research Platform reimagines how analytical research is communicated. Rather than delivering a static report, the system uses a guided stepper interface to walk stakeholders through market context, financial modeling, valuation scenarios, and investment considerations in a structured, interactive sequence.",
+    "business_problem": "Traditional equity research delivery — static PDFs and slide decks — creates a disconnect between the depth of analysis and the stakeholder's ability to engage with it. Complex financial models, scenario analyses, and trade-off discussions get compressed into formats that lose nuance and interactivity.",
+    "solution_overview": "The platform implements a 7-step interactive presentation stepper that guides users through the complete research workflow: from market context and company positioning through financial analysis, valuation modeling, Monte Carlo simulation, and final investment considerations. Each step is designed for interpretability, not just information density.",
+    "contribution": "Designed the research delivery workflow, built the Streamlit-based interactive platform, structured the step-by-step presentation logic, and implemented interactive visualization components including valuation sliders and Monte Carlo simulation. Framed the project as a case study in analytical communication rather than just financial modeling.",
+    "architecture": {
+      "data_layer": "Structured financial data with pre-computed analytical layers",
+      "modeling": "DCF valuation, scenario analysis, Monte Carlo simulation engine",
+      "frontend": "Streamlit dashboard with 7-step guided stepper interface",
+      "outputs": "Interactive charts, valuation ranges, risk assessments, guided narrative"
+    },
+    "workflow_steps": [
+      "Present market context and industry positioning",
+      "Walk through company-specific financial analysis",
+      "Introduce valuation methodology and assumptions",
+      "Enable interactive scenario exploration with valuation sliders",
+      "Run Monte Carlo simulation for probability-weighted outcomes",
+      "Summarize investment considerations and trade-offs",
+      "Deliver guided stakeholder-ready research output"
+    ],
+    "outcomes": [
+      "7-step interactive research delivery workflow",
+      "Guided analytical communication replacing static report formats",
+      "Interactive valuation and scenario exploration tools",
+      "Portfolio-ready case study in decision-oriented research reporting"
+    ],
+    "reflection": "The next phase would expand the platform to support multiple research subjects, add real-time data feeds, and develop a collaborative annotation layer. The core lesson — that research communication is itself a workflow design problem — would guide any future development.",
+    "screenshots": [],
+    "hero_image": "assets/images/projects/equity-hero.webp",
+    "github_url": "https://github.com/GavinShklanka/Equity-Research",
+    "live_url": "https://gavinshklanka-equity-research-app-g25a8k.streamlit.app/",
+    "linkedin_skills": ["Business Analysis", "Financial Analysis", "Data Visualization", "Workflow Design", "Analytical Communication"],
+    "linkedin_description": "Built a structured equity research delivery platform that replaces static reports with an interactive guided workflow. The system walks stakeholders through market context, financial analysis, valuation scenarios, and Monte Carlo simulations using a step-by-step dashboard interface. My work focused on designing the research delivery workflow, building interactive visualization components, and framing the project as a case study in how analytical communication can be structured for clearer stakeholder engagement."
+  },
+  {
+    "slug": "klara",
+    "title": "KLARA: Structured Planning and Decision Support",
+    "subtitle": "Workflow-oriented planning system for clearer intake, recommendation, and action processes",
+    "status": "in-progress",
+    "featured": false,
+    "category": "Workflow Automation",
+    "tags": ["Workflow Automation", "Decision Support", "Process Design"],
+    "sort_order": 5,
+    "short_summary": "A workflow-oriented planning and decision-support system designed to turn complex multi-step problems into clearer intake, recommendation, and action processes.",
+    "executive_summary": "KLARA is a workflow-oriented planning and decision-support project designed to turn a complex multi-step problem into a clearer intake, recommendation, and action process. It explores how structured workflows, guided user inputs, and business logic can reduce friction in decision environments where people need clearer next steps rather than more raw information.",
+    "business_problem": "Many planning and decision environments suffer from the same structural problem: the process is unclear, the inputs are fragmented, and the user is left navigating complexity without guidance. The result is decision fatigue, missed steps, and poor outcomes — not because the information is missing, but because the workflow is not structured to support the user.",
+    "solution_overview": "KLARA addresses this by organizing complex planning tasks into a structured workflow: guided intake, recommendation logic, and clear action outputs. The system emphasizes workflow design, usability, and operational clarity by organizing inputs, surfacing relevant actions, and making the overall planning process more understandable and easier to navigate.",
+    "contribution": "Designed the workflow architecture, intake flow logic, recommendation engine structure, and user-facing interface. Built the system to demonstrate how structured workflows can replace ad-hoc processes in planning and decision-support environments.",
+    "architecture": {
+      "data_layer": "Structured intake forms and user input processing",
+      "modeling": "Rule-based recommendation engine with planning logic",
+      "frontend": "Step-based planning interface with guided workflow",
+      "outputs": "Structured recommendations, action plans, process documentation"
+    },
+    "workflow_steps": [
+      "Capture structured intake through guided forms",
+      "Process inputs against planning logic and business rules",
+      "Generate prioritized recommendations",
+      "Present clear action steps with supporting rationale",
+      "Support iterative refinement and planning adjustments"
+    ],
+    "outcomes": [
+      "Structured planning workflow replacing ad-hoc processes",
+      "Guided intake-to-recommendation pipeline",
+      "User-facing interface designed for operational clarity",
+      "Case study in workflow design and process improvement"
+    ],
+    "reflection": "Future development would expand the recommendation engine, add collaborative planning features, and integrate with external data sources for richer context. The core principle — that workflow structure matters more than feature density — would remain central.",
+    "screenshots": [],
+    "hero_image": "assets/images/projects/klara-hero.webp",
+    "github_url": "https://github.com/GavinShklanka/klara-greenhouse",
+    "live_url": "",
+    "linkedin_skills": ["Business Analysis", "Workflow Design", "Decision Support Systems", "Process Improvement", "User Experience (UX)"],
+    "linkedin_description": "KLARA is a workflow-oriented planning and decision-support project designed to turn a complex multi-step problem into a clearer intake, recommendation, and action process. I built it to explore how structured workflows, guided user inputs, and business logic can reduce friction in decision environments where people need clearer next steps rather than more raw information. The project emphasizes workflow design, usability, and operational clarity by organizing inputs, surfacing relevant actions, and making the overall planning process more understandable and easier to navigate."
+  },
+  {
+    "slug": "personal-ops-agent",
+    "title": "Personal Ops Agent",
+    "subtitle": "Workflow automation for operational task management, scheduling, and execution support",
+    "status": "in-progress",
+    "featured": false,
+    "category": "Workflow Automation",
+    "tags": ["Workflow Automation", "Systems Design", "Python"],
+    "sort_order": 6,
+    "short_summary": "A workflow automation system for organizing recurring operational tasks, reminders, and action flows into a structured personal control system with scheduling and monitoring.",
+    "executive_summary": "Personal Ops Agent is a workflow automation project focused on organizing recurring operational tasks, reminders, and action flows into a more structured personal control system. It explores how scheduling, monitoring, and lightweight automation can improve execution across fragmented tasks and tools.",
+    "business_problem": "Day-to-day operational work is often fragmented across multiple tools, manual reminders, and ad-hoc processes. This creates overhead, missed actions, and a lack of clarity about what needs to happen next. The problem is not a lack of tools — it is a lack of structured workflow connecting them.",
+    "solution_overview": "The system combines scheduling logic, task orchestration, and monitoring into a unified operational layer. It provides a clearer view of pending actions, automates recurring workflows, and reduces the manual overhead of managing fragmented operational tasks.",
+    "contribution": "Designed the operational architecture, built the scheduling and task orchestration engine, and created the monitoring interface. The emphasis was on creating a practical system that demonstrates how workflow automation thinking applies to personal operations, not just enterprise contexts.",
+    "architecture": {
+      "data_layer": "Task and schedule database with event tracking",
+      "modeling": "Scheduling engine with priority logic and automation rules",
+      "frontend": "Dashboard with task views, scheduling interface, and status monitoring",
+      "outputs": "Automated task execution, scheduling alerts, operational status views"
+    },
+    "workflow_steps": [
+      "Define operational tasks and recurring action patterns",
+      "Configure scheduling rules and automation triggers",
+      "Monitor task status and execution through dashboard",
+      "Review automated actions and manual intervention points",
+      "Iterate on workflow rules based on operational patterns"
+    ],
+    "outcomes": [
+      "Structured operational workflow replacing fragmented task management",
+      "Automated scheduling and monitoring system",
+      "Dashboard for operational status and task tracking",
+      "Case study in applying workflow automation to personal operations"
+    ],
+    "reflection": "Future development would add integration with external tools and APIs, expand the automation rules engine, and explore natural-language task capture. The core value — that workflow structure creates operational clarity — would continue to guide the design.",
+    "screenshots": [],
+    "hero_image": "assets/images/projects/ops-hero.webp",
+    "github_url": "https://github.com/GavinShklanka/personal-ops-agent",
+    "live_url": "",
+    "linkedin_skills": ["Workflow Automation", "Python", "API Integration", "Systems Design", "Process Improvement"],
+    "linkedin_description": "Personal Ops Agent is a workflow automation project focused on organizing recurring operational tasks, reminders, and action flows into a more structured personal control system. I built it to explore how scheduling, monitoring, and lightweight automation can improve execution across fragmented tasks and tools. The project combines systems thinking with practical workflow design, with an emphasis on creating a clearer operational layer that helps track actions, reduce manual overhead, and make day-to-day processes easier to manage."
+  }
+]
